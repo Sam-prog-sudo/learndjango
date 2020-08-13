@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<p><a href="{% url 'cities' %}">Cities search engine</a></p>
+<p><a href="{% url 'article_list' %}">Articles</a></p>
+<p><a href="{% url 'contact' %}">Contact</a></p>
+<p><a href="{% url 'posts' %}">Posts</a></p>
+<p><a href="{% url 'add_post' %}">Create a new post.</a></p>
+{% if user.is_authenticated %}
+  Hi {{ user.email }}!
+  <p><a href="{% url 'account_logout' %}">Log out</a></p>
+  <p><a href="{% url 'password_reset' %}">reset password</a></p>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'account_login' %}">Log in</a>
+  <a href="{% url 'account_signup' %}">Sign up</a>
+{% endif %}
+{% endblock %}

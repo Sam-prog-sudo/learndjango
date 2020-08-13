@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on example.com
+From: webmaster@localhost
+To: testuser@emencia.com
+Date: Mon, 10 Aug 2020 18:31:49 -0000
+Message-ID: <159708430959.24392.9199686286032133875@sam-botte>
+
+
+You're receiving this email because you requested a password reset for your user account at example.com.
+
+Please go to the following page and choose a new password:
+
+http://example.com/users/reset/Mg/5ix-17b367ffcbae5a1bff7b/
+
+Your username, in case you’ve forgotten: testuser
+
+Thanks for using our site!
+
+The example.com team
+
+
+
+-------------------------------------------------------------------------------

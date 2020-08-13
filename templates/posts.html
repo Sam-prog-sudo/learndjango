@@ -1,0 +1,8 @@
+<h1>Django Image Uploading</h1>
+<p><a href="{% url 'add_post' %}">Create a new post.</a></p>
+<ul>
+  {% for post in object_list %}
+    <h2>{{ post.title }}</h2>
+    <img src="{{ post.cover.url}}" alt="{{ post.title }}">
+  {% endfor %}
+</ul>
