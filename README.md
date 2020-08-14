@@ -19,14 +19,15 @@ This project allowed me to learn how to:
 ----
 ## Prerequisites
 
-* Python 3.6.  
+* Python 3.6 and virtualenv.  
 
 * Download/clone this repo to a local folder.  
 
 * Activate your virtual environment.  
-With venv:
+With virtualenv:
 ```shell
-python3 -m venv /chemin/vers/environnement/virtuel
+virtualenv .venv
+source .venv/bin/activate
 ```
 * Install [required modules](https://github.com/Sam-prog-sudo/learndjango/blob/master/requirements.txt), in the same folder.  
 ```shell
