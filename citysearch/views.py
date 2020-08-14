@@ -5,11 +5,11 @@ from django.db.models import Q
 
 
 class CitiesPageView(TemplateView):
-    template_name = 'cities.html'
+    template_name = 'searchcities/cities.html'
 
 class SearchResultsView(ListView):
     model = City
-    template_name = 'search_results.html'
+    template_name = 'searchcities/search_results.html'
     
     def get_queryset(self):
         query = self.request.GET.get('q')

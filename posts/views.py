@@ -7,10 +7,10 @@ from .models import Post
 
 class PostsPageView(ListView):
     model = Post
-    template_name = 'posts.html'
+    template_name = 'posts/posts.html'
 
 class CreatePostView(CreateView):
     model = Post
     form_class = PostForm
-    template_name = 'new_post.html'
+    template_name = 'posts/new_post.html'
     success_url = reverse_lazy('posts')
